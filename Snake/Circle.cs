@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Snake
+﻿namespace Snake
 {
     public class Circle
     {
-        public Circle()
+        public Circle(int x = 0, int y = 0)
         {
-            this.X = 0;
-            this.Y = 0;
+            this.X = x;
+            this.Y = y;
         }
 
         public int X { get; set; }

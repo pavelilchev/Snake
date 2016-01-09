@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Snake
+﻿namespace Snake
 {
     public enum Direction
     {
@@ -12,7 +6,7 @@ namespace Snake
         Down,
         Left,
         Right
-    };
+    }
 
     public class Settings
     {
@@ -24,21 +18,21 @@ namespace Snake
             Score = 0;
             Points = 100;
             GameOver = false;
-            direction = Direction.Down;
+            Direction = Direction.Down;
         }
 
-        public static int Width { get; set; }
+        public static int Width { get; private set; }
 
-        public static int Height { get; set; }
+        public static int Height { get; private set; }
 
-        public static int Speed { get; set; }
+        public static int Speed { get; private set; }
 
         public static int Score { get; set; }
 
-        public static int Points { get; set; }
+        public static int Points { get; private set; }
 
         public static bool GameOver { get; set; }
 
-        public static Direction direction { get; set; }
+        public static Direction Direction { get; set; }
     }
 }

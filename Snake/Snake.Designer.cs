@@ -1,6 +1,6 @@
 ﻿namespace Snake
 {
-    partial class Form1
+    partial class Snake
     {
         /// <summary>
         /// Required designer variable.
@@ -79,7 +79,7 @@
             this.lblGameOver.Text = "label2";
             this.lblGameOver.Visible = false;
             // 
-            // Form1
+            // Snake
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -88,8 +88,8 @@
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbCanvas);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Snake";
+            this.Text = "Snake";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pbCanvas)).EndInit();
